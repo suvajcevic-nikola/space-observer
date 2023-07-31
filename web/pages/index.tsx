@@ -1,5 +1,14 @@
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+
 const HomePage: React.FunctionComponent = () => {
-  return <p>The WebGPU</p>;
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push("/earth");
+  }, []);
+
+  return null;
 };
 
 export default HomePage;

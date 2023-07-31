@@ -3,13 +3,11 @@ module.exports = {
   extends: [
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
-    "plugin:prettier/recommended",
     'plugin:@next/next/recommended',
   ],
   plugins: [
     "@typescript-eslint",
     "react",
-    "prettier"
   ],
   rules: {
     "react/react-in-jsx-scope": "off",

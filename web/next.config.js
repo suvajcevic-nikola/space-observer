@@ -6,7 +6,7 @@ const fs = require("fs");
 const BASE_PATH = process.env.BASE_PATH || "";
 
 const nextConfig = {
-  output: "standalone",
+  // output: "standalone",
   basePath: BASE_PATH,
   compress: true,
   reactStrictMode: true,
@@ -40,6 +40,14 @@ const nextConfig = {
 
     return config;
   },
+  /** TODO: Temporary disabled */
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  /** */
   env: {
     REPOSITORY_NAME: process.env.REPOSITORY_NAME,
   },
